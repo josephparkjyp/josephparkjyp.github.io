@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="home">
-        <h1>Hello, I'm Joseph Park.</h1>
-        <p>I'm a Full-Stack Web Developer.</p>
-        <button type="button">Explore My Work</button>
+        <h1 class="fade">Hello, I'm Joseph Park.</h1>
+        <p class="fade">I'm a Full-Stack Web Developer.</p>
+        <button type="button" class="btn-explore fade-long" onClick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Explore My Work</button>
     </div>
 
     <div class="navbar">
@@ -27,7 +27,7 @@
     </div>
     
 
-    <div class="about">
+    <div class="about" id="about">
         <h1>ABOUT</h1>
         <div class="hex-border">
             <img src="./assets/self-portrait.jpg" class="hex">
