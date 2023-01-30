@@ -40,6 +40,8 @@ html, body {
 }
 
 .navbar {
+    z-index: 999;
+    
     height: 40px;
     background-color: #2F4F4F;
     display: flex;
@@ -76,6 +78,29 @@ html, body {
     transition: 0.6s;
 }
 
-.about > img {
-    width: 300px;
+.hex {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+
+    position: relative;
+    top: 5px;
+    
+    object-fit: cover;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.hex-border {
+    margin: auto;
+    width: 510px;
+    height: 510px;
+
+    background-color: #3F3F3F;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+.testing {
+    height: 200vh;
 }
