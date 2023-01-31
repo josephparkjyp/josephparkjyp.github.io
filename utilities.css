@@ -49,6 +49,22 @@ hr.line {
     background-color: #3f3f3f;
 }
 
+hr.line-small {
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    hr.line-small {
+        visibility: visible;
+        margin: 0;
+        padding: 0;
+        height: 1px;
+        width: 35px;
+        border: 0;
+        background-color: #ffffff;
+    }
+}
+
 /* A testing div was added to the bottom of the body so that scrolling could be tested in development. */
 .testing {
     height: 200vh;
