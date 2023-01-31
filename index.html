@@ -8,47 +8,50 @@
     
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
     <script defer src="app.js"></script>
 </head>
 <body>
     <div id="home" class="home">
-        <h1 class="fade">Hello, I'm Joseph Park.</h1>
-        <p class="fade">I'm a Full-Stack Web Developer.</p>
-        <button id="btn-explore" type="button" class="fade-long">Explore My Work</button>
+        <h1 class="hidden">Hello, I'm Joseph Park.</h1>
+        <p class="hidden">I'm a Full-Stack Web Developer.</p>
+        <button id="btn-explore" class="hidden">Explore My Work</button>
     </div>
 
-    <div class="navbar">
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">EXPERIENCE</a></li>
-            <li><a href="#">CONTACT</a></li>
+    <div class="nav">
+        <ul class="hidden nav-ul">
+            <li class="nav-li"><a href="#home">HOME</a></li>
+            <li class="nav-li"><a href="#about">ABOUT</a></li>
+            <li class="nav-li"><a href="#">PROJECTS</a></li>
+            <li class="nav-li"><a href="#">EXPERIENCE</a></li>
+            <li class="nav-li"><a href="#">CONTACT</a></li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </div>
     
-
-    <div class="about" id="about">
-        <h1 class="about-ch hidden">ABOUT</h1>
-        <hr class="about-ch hidden line-center">
-        <div class="about-ch hidden hex-border">
-            <img src="./assets/self-portrait.jpg" class="hex">
+    <div id="about" class="about">
+        <h1 class="hidden">ABOUT</h1>
+        <hr class="hidden line">
+        <div class="hidden hex-border">
+            <img class="hidden hex" src="./assets/self-portrait.jpg" >
         </div>
-        
-        <p class="about-ch hidden summary-short">Cat Dad • Coffee Connoisseur • Cyclist</p>
-        <p class="about-ch hidden summary-long">As a self-taught full-stack web developer, 
-            I am passionate about crafting websites and 
-            applications that provide an enjoyable user 
-            experience through intuitive design and 
-            seamless functionality. I am constantly 
-            seeking new opportunities to enhance my 
-            skills and expand my knowledge in the field 
-            of web development.</p>
-        <a href="#" class="about-ch hidden">Connect & Collaborate.</a>
+        <p class="hidden">Cat Dad • Coffee Connoisseur • Cyclist</p>
+        <p class="hidden">  As a self-taught full-stack web developer, 
+                            I am passionate about crafting websites and 
+                            applications that provide an enjoyable user 
+                            experience through intuitive design and 
+                            seamless functionality. I am constantly 
+                            seeking new opportunities to enhance my 
+                            skills and expand my knowledge in the field 
+                            of web development.</p>
+        <a class="hidden" href="#">Connect & Collaborate.</a>
     </div>
-    <div class="testing">
 
-    </div>
+    <div class="testing"></div>
 
 
 
