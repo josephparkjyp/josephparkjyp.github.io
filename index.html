@@ -8,18 +8,19 @@
     
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
 </head>
 <body>
-    <div class="home">
+    <div id="home" class="home">
         <h1 class="fade">Hello, I'm Joseph Park.</h1>
         <p class="fade">I'm a Full-Stack Web Developer.</p>
-        <button type="button" class="btn-explore fade-long" onClick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Explore My Work</button>
+        <button id="btn-explore" type="button" class="fade-long">Explore My Work</button>
     </div>
 
     <div class="navbar">
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="#">PROJECTS</a></li>
             <li><a href="#">EXPERIENCE</a></li>
             <li><a href="#">CONTACT</a></li>
@@ -28,13 +29,14 @@
     
 
     <div class="about" id="about">
-        <h1>ABOUT</h1>
-        <div class="hex-border">
+        <h1 class="about-ch hidden">ABOUT</h1>
+        <hr class="about-ch hidden line-center">
+        <div class="about-ch hidden hex-border">
             <img src="./assets/self-portrait.jpg" class="hex">
         </div>
         
-        <p>Cat Dad • Coffee Connoisseur • Cyclist</p>
-        <p>As a self-taught full-stack web developer, 
+        <p class="about-ch hidden summary-short">Cat Dad • Coffee Connoisseur • Cyclist</p>
+        <p class="about-ch hidden summary-long">As a self-taught full-stack web developer, 
             I am passionate about crafting websites and 
             applications that provide an enjoyable user 
             experience through intuitive design and 
@@ -42,7 +44,7 @@
             seeking new opportunities to enhance my 
             skills and expand my knowledge in the field 
             of web development.</p>
-        <a href="#">Connect & Collaborate.</a>
+        <a href="#" class="about-ch hidden">Connect & Collaborate.</a>
     </div>
     <div class="testing">
 
@@ -51,6 +53,6 @@
 
 
     
-    <script src="app.js"></script>
+    
 </body>
 </html>
