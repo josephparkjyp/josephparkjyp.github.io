@@ -20,6 +20,8 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
         }
     })
 })
@@ -37,4 +39,18 @@ const nav_ul = document.querySelector('.nav-ul')
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active')
     nav_ul.classList.toggle('active')
+})
+
+// Observes elements in the skills section to cue animation.
+const observeSkills = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fillBar')
+        }
+    })
+})
+
+const skillElements = document.querySelectorAll('.skill-percent')
+skillElements.forEach((element) => {
+    observeSkills.observe(element)
 })
