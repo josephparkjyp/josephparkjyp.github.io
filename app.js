@@ -33,12 +33,33 @@ hiddenElements.forEach((element) => {
 
 
 
+
+// Hamburger Menu.
 const hamburger = document.querySelector('.hamburger')
 const nav_ul = document.querySelector('.nav-ul')
+const nav_li = document.querySelectorAll('.nav-li')
 
-hamburger.addEventListener('click', () => {
+function toggleMenu() {
     hamburger.classList.toggle('active')
     nav_ul.classList.toggle('active')
+}
+
+document.addEventListener('click', (event) => {
+    if (hamburger.contains(event.target)) {
+        toggleMenu()
+    } else if (nav_ul.classList.contains('active') && !nav_ul.contains(event.target)) {
+        toggleMenu()
+    }
+})
+
+nav_li.forEach((item) => {
+    item.addEventListener('click', toggleMenu)
+})
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'Escape') {
+        toggleMenu()
+    }
 })
 
 // Observes elements in the skills section to cue animation.

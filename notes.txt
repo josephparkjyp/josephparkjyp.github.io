@@ -1,0 +1,17 @@
+    <div class="">
+        <h2>From Python Beginner to Aspiring Web Developer: My Journey in Coding</h2>
+        <p>My coding journey began during my university studies, 
+            where I first learned the basics of Python. I was 
+            fascinated by the power of programming and soon found 
+            myself using it for data analysis. However, it was 
+            during my clinical work in ABA that I discovered the 
+            world of web development and fell in love with its 
+            creative possibilities. Driven by my newfound passion, 
+            I set out on a self-taught journey to further develop 
+            my skills, expanding my knowledge to include various 
+            coding languages and honing my web development abilities. 
+            Now, I aspire to join a dynamic team of developers, 
+            where I can continue to grow my skills, collaborate with 
+            others, and bring my ideas to life through the creation 
+            of innovative web applications.</p>
+    </div>

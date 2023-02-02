@@ -20,15 +20,15 @@
 
     <div class="nav">
         <ul class="nav-ul">
-            <li class="nav-li"><a href="#home">HOME</a></li>
+            <li class="hidden nav-li"><a href="#home">HOME</a></li>
             <hr class="line-small">
-            <li class="nav-li"><a href="#about">ABOUT</a></li>
+            <li class="hidden nav-li"><a href="#about">ABOUT</a></li>
             <hr class="line-small">
-            <li class="nav-li"><a href="#projects">PROJECTS</a></li>
+            <li class="hidden nav-li"><a href="#projects">PROJECTS</a></li>
             <hr class="line-small">
-            <li class="nav-li"><a href="#">EXPERIENCE</a></li>
+            <li class="hidden nav-li"><a href="#experiences">EXPERIENCES</a></li>
             <hr class="line-small">
-            <li class="nav-li"><a href="#">CONTACT</a></li>
+            <li class="hidden nav-li"><a href="#contact">CONTACT</a></li>
         </ul>
         <div class="hamburger">
             <span class="bar"></span>
@@ -54,7 +54,6 @@
                             of web development.</p>
         <a class="hidden" href="#">Connect & Collaborate.</a>
     </div>
-
 
     <div class="skills">
         <div class="hidden skill">
@@ -128,19 +127,24 @@
         </div>
     </div>
 
-    <div id="projects" class="hidden projects">
-        <h1>PROJECTS</h1>
+    <div id="projects" class="projects">
+        <h1 class="hidden">PROJECTS</h1>
         <hr class="hidden line">
     </div>
 
-    <div class="contact">
-        <h1>CONTACT</h1>
+    <div id="experiences" class="experiences">
+        <h1 class="hidden">EXPERIENCES</h1>
+        <hr class="hidden line">
+    </div>
+
+    <div id="contact" class="contact">
+        <h1 class="hidden">CONTACT</h1>
         <hr class="hidden line">
         <p>Have a question or want to work together?</p>
         <form>
-            <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
-            <input type="textarea" placeholder="Your Message">
+            <input type="text" placeholder="Subject">
+            <textarea rows = 10 placeholder="Your Message"></textarea>
             <button type="submit">Submit</button>
         </form>
         <a href="#">Up</a>
