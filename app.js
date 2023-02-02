@@ -75,3 +75,7 @@ const skillElements = document.querySelectorAll('.skill-percent')
 skillElements.forEach((element) => {
     observeSkills.observe(element)
 })
+
+
+//.currently-on-page
+

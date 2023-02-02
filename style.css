@@ -106,6 +106,12 @@ html, body {
     letter-spacing: 2px;
 }
 
+.currently-on-page {
+    color: #c95a9c;
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -290,7 +296,7 @@ html, body {
     width: 100%;
     min-height: 100vh;
     padding-top: 80px;
-    background-color: #3f3f3f;
+    background-color: #313131;
     color: #ffffff;
 }
 
@@ -305,6 +311,7 @@ html, body {
 .contact > p {
     margin: 30px 0;
     font-size: 15px;
+    color: #4285F4;
 }
 
 .contact > form {
@@ -332,7 +339,66 @@ html, body {
 
 .contact > form > button {
     width: 100px;
+    height: 45px;
     margin-left: auto;
     position: relative;
     left: 8px;
+    font-size: 18px;
+
+    border: 2px solid white;
+    background-color: #313131;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.contact > form > button:hover {
+    background-color: #3f3f3f;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transform: translateY(-1px);
+}
+
+.contact > form > button:active {
+    background-color: #252525;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github, .linkedin {
+    background-color: #313131;
+    margin: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.github:hover, .linkedin:hover, .github:focus, .linkedin:focus {
+    background-color: #ffffff25;
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    position: relative;
+    top: 10px;
+}
+
+.footer {
+    background-color: #2F4F4F;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.footer > span {
+    color: #c95a9c;
 }
